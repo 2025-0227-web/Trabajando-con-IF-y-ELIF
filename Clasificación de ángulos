@@ -1,0 +1,13 @@
+#Solicita al usuario el valor de un ángulo en grados y determina si es agudo (<90°),
+#recto (90°), obtuso (>90° y <180°) o llano (180°).
+angulo = float(input("Introduce el valor del angulo en grados:"))
+if angulo < 0 or angulo > 180:
+    print("valor no valido")
+elif angulo < 90:
+    print("El angulo es agudo")
+elif angulo == 90:
+    print("El angulo es recto")
+elif angulo > 90 and angulo < 180:
+    print("El angulo es obtuso")
+else:
+    print ("El angulo es llano")

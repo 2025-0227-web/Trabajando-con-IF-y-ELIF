@@ -1,0 +1,12 @@
+#Pide al usuario que ingrese dos números y determina cuál es el mayor o si son iguales.
+numero1 =int(input("introduce el primer numero:"))
+numero2 =int(input("introduce el segundo numero:"))
+
+if numero1>numero2:
+    print("el numero mayor es:",numero1)
+elif numero2>numero1:
+    print("el numero mayor es:",numero2)
+else:
+    print("los numeros son iguales")
+
+

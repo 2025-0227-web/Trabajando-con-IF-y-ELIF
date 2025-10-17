@@ -1,0 +1,13 @@
+#Solicita el precio de un producto y aplica descuentos según el monto:
+# Menos de $50: sin descuento
+# Entre $50 y $100: 5%
+# Más de $100: 10%
+precio = float(input("Ingrese el precio del producto: $"))
+if precio < 50:
+    descuento = 0
+elif 50 <= precio <= 100:
+    descuento = 0.05 * precio
+else:
+    descuento = 0.10 * precio
+precio_final = precio - descuento
+print(f"El precio final con descuento es: ${precio_final:.2f}")

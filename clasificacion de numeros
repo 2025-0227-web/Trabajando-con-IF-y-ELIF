@@ -1,0 +1,14 @@
+#Pide al usuario tres números y determina si son todos positivos, todos negativos,
+#mixtos o si hay ceros.
+num1 = float(input("Introduce el primer numero:"))
+num2 = float(input("Introduce el segundo numero:"))
+num3 = float(input("Introduce el tercer numero:"))
+if num1 == 0 or num2 == 0 or num3 == 0:
+    print("Hay ceros")
+elif num1 > 0 and num2 > 0 and num3 > 0:
+    print("Todos son positivos")
+elif num1 < 0 and num2 < 0 and num3 < 0:
+    print("Todos son negativos")
+else:
+    print("son mixtos")
+

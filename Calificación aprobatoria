@@ -1,0 +1,10 @@
+
+  # Solicita la calificación de un estudiante (0-100) y determina si aprobó (mínimo 60) o reprobó.
+nota = int(input("Introduce tu calificación: "))
+if nota > 100 or nota < 0:
+    mensaje = "Calificación no válida"
+    print(mensaje)
+elif nota >= 60:
+    print("Aprobaste")
+else:
+    print("Reprobaste")

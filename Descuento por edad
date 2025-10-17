@@ -1,0 +1,6 @@
+#Un cine ofrece un descuento del 50% a personas mayores de 60 años. Solicita la
+#edad del usuario y determina si aplica para el descuento.
+if edad:=int(input("introduce tu edad:"))>60:
+    print("tienes descuento del 50%")
+else:
+    print ("no tienes descuento")

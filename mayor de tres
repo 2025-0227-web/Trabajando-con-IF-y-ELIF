@@ -1,0 +1,16 @@
+
+#Pide al usuario tres números y muestra el mayor de ellos.
+def mayor_de_tres(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >= num3:
+        return num2
+    else:
+        return num3
+        
+print("programa para saber el numero mayor de tres")
+numero1 = float(input("Introduce el primer numero:"))
+numero2 = float(input("Introduce el segundo numero:"))
+numero3 = float(input("Introduce el tercer numero:"))
+mayor = mayor_de_tres(numero1, numero2, numero3)
+print("El numero mayor es:", mayor) 

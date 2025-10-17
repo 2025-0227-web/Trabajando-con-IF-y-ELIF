@@ -1,0 +1,7 @@
+# Pide al usuario que ingrese un número entero y determina si es par o impar.
+numero=int(input("introduce un numero entero:"))
+if numero%2==0:
+    print("el numero es par")
+else:
+    print("el numero es impar")
+    

@@ -1,0 +1,22 @@
+# Solicita la calificación numérica de un estudiante (0-100) y conviértela en una letra:
+# 90-100: A
+# 80-89: B
+# 70-79: C
+# 60-69: D
+# 0-59: F
+
+calificacion = int(input("Ingrese la calificación numérica (0-100): "))
+if 90 <= calificacion <= 100:
+    print("La calificación es: A")
+elif 80 <= calificacion < 90:
+    print("La calificación es: B")
+elif 70 <= calificacion < 80:
+    print("La calificación es: C")
+elif 60 <= calificacion < 70:
+    print("La calificación es: D")
+elif 0 <= calificacion < 60:
+    print("La calificación es: F")
+else:
+    print("Calificación inválida. Por favor ingrese un número entre 0 y 100.")
+    
+
