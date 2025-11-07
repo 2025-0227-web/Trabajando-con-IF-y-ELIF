@@ -1,0 +1,23 @@
+#programa tipo colmado:registrar productos y precios
+
+productos=[] #lista para nombres de productos
+precios=[]  #lista para precios
+cantidades=[] #lista para cantidades
+while True:
+    producto = input("Ingrese el nombre del producto (o 'salir' para terminar): ")
+    if producto.lower() == 'salir':
+        break
+    precio = input(f"Ingrese el precio de {producto}: ")
+    print(f"Producto: {producto}, Precio: {precio}")
+    #Guardar en las listas
+    productos.append(producto)
+    precios.append(precio)
+    cantidades.append(precio)
+
+    seguir =input("¿Desea agregar otro producto? (s/n): ")
+    if seguir.lower() != 's':
+        break
+print("lista de productos registrados:")
+for i in range(len(productos)):
+    print(f"Producto: {productos[i]}, Precio: {precios[i]}")
+
